@@ -81,7 +81,7 @@ const imgAction = (action) => {
       <button onClick={()=> imgAction()} style={{position: 'absolute', top: '20px', right: '20px', borderRadius: '5px 0px', border: '1px solid #0C0908'}}>X</button>
       <button onClick={()=> imgAction('prev-img')} style={{position: 'absolute', left: '5%', width: '80px', borderRadius: '5px 0px', border: '1px solid #0C0908'}}>Previous</button>
       <img src={info.img} style={{width: 'auto', maxWidth: '90%', maxHeight: '90%', borderRadius: '20px 0px', border: '1px solid #0C0908'}}/>
-      <button onClick={()=> imgAction('next-img')} style={{ position: 'absolute', right: '5%', width: '80px', borderRadius: '5px 0px', border: '1px solid #0C0908'}}>Next</button>
+      <button onClick={()=> imgAction('next-img')} style={{ position: 'absolute', right: '5%', width: '80px', borderRadius: '5px 0px', border: '1px solid #0C0908', }}>Next</button>
     </div>
     }
             <ResponsiveMasonry

@@ -40,4 +40,10 @@
   text-align: center;
   font-weight: bold;
   padding: 5px;
+  cursor: pointer;
+}
+
+.desc:hover{
+  color: #4979ff;
+  font-weight: bold;
 }

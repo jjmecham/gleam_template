@@ -25,7 +25,7 @@ export default function News({posts}) {
       {posts.length > 0 && posts.map(
         ({ _id, title = '', slug = '', publishedAt = '' }) =>
           slug && (
-            <div>
+            <div className={styles.main}>
             <p key={_id} className={styles.entry}>
               <Link href="/post/[slug]" as={`/post/${slug.current}`} className={styles.slug}>
                 {title}:

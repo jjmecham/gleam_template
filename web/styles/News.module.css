@@ -17,13 +17,37 @@
   text-align: center;
 }
 .date{
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
 }
 .slug{
   cursor: pointer;
   font-weight: bold;
+  font-size: 2em;
 }
 .slug:hover{
-  color: #666;
+  color: #666#4979ff;
+}
+
+.main p{
+  padding: 10px 20px;
+  border: 1px solid #999;
+  margin:20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main a{
+  padding-left: 8px;
+}
+.main:hover a{
+  background-color: #666;
+  color: #FFF;
+  border: 1px solid rgb(70, 70, 70);
+}
+
+.main a{
+  display: block;
+  width: 50%;
 }

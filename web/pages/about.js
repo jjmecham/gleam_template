@@ -1,18 +1,29 @@
 import Head from 'next/head'
-import styles from '../styles/About.module.css'
+import Image from 'next/image'
+import { Inter } from '@next/font/google'
+import styles from '../styles/Home.module.css'
+import client from '../client'
+import Link from 'next/link'
+import groq from 'groq'
 
-const About = () => {
-    return ( 
-    <>
+const inter = Inter({ subsets: ['latin'] })
+const Home = () => {
+  return (
+      <>
       <Head>
         <title>About</title>
-        <meta name="keywords" content="ninjas" />
+        <meta name="keywords" content="about" />
       </Head>
-      <h3 className={styles.title}>About</h3>
+      <div className={styles.main}>
+        <h3 className={styles.title}>About</h3>
         <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corrupti nisi perferendis debitis reiciendis laboriosam, facilis deleniti iusto enim totam repellat reprehenderit. Neque inventore error explicabo saepe non vero praesentium.</p>
         <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corrupti nisi perferendis debitis reiciendis laboriosam, facilis deleniti iusto enim totam repellat reprehenderit. Neque inventore error explicabo saepe non vero praesentium.</p>
-    </>
+        <Link href="/apidata" className={styles.btn}>
+          See API Items
+        </Link>
+      </div>
+        </>
      );
 }
  
-export default About
+export default Home
