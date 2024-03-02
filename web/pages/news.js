@@ -20,7 +20,7 @@ export default function News({posts}) {
         <meta name="keywords" content="ninjas" />
       </Head>
         <div>
-            <h3 className={styles.title}>News</h3>
+            <h3 className="">News</h3>
         </div>
       {posts.length > 0 && posts.map(
         ({ _id, title = '', slug = '', publishedAt = '' }) =>
